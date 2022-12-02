@@ -13,6 +13,7 @@
 #include <windows.h>
 #include<math.h>
 #include<bits/stdc++.h>
+
 using namespace std;
 const int width = 700;
 const int height = 700;
@@ -36,10 +37,6 @@ float l_height =.5;
 float spt_cutoff = 30;
 unsigned int ID;
 vector<int>v;
-
-
-
-
 
 
 static void getNormal3p(GLfloat x1, GLfloat y1, GLfloat z1, GLfloat x2, GLfloat y2, GLfloat z2, GLfloat x3, GLfloat y3, GLfloat z3)
@@ -1312,7 +1309,7 @@ void light()
     glTranslatef(-0.5,-0.5,-0.5);
     //cube(1,0,0,true);
     glPopMatrix();
-
+}
 
 static void display(void)
 {
@@ -1635,4 +1632,3 @@ int main(int argc, char *argv[])
 
     return EXIT_SUCCESS;
 }
-
